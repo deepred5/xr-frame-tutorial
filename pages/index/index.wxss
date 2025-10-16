@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
-.nickname-label {
-  color: #fcd;
+.btn-list {
+  padding-top: 50rpx;
+}
+
+.btn-list .btn {
+  margin-bottom: 20rpx;
 }

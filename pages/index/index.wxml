@@ -1,6 +1,6 @@
 <!-- index.wxml -->
 <view class="container">
-  <view class="nickname-wrapper">
-    <text class="nickname-label">{{motto}}</text>
+  <view class="btn-list">
+    <button data-type="demo1" bind:tap="handleTap" type="primary" class="btn">基础知识</button>
   </view>
 </view>

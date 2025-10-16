@@ -1,0 +1,17 @@
+<!-- components/demo1/index.wxml -->
+<xr-scene>
+  <xr-assets bind:progress="handleAssetsProgress" bind:loaded="handleAssetsLoaded">
+    <xr-asset-load type="texture" asset-id="waifu" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/waifu.png" />
+    <xr-asset-load type="texture" asset-id="deepred" src="https://avatars.githubusercontent.com/u/13102815" />
+    <xr-asset-load asset-id="anim" type="keyframe" src="/assets/animation.json"/>
+    <xr-asset-load type="gltf" asset-id="miku" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/miku.glb" />
+    <xr-asset-material asset-id="mat" uniforms="u_baseColorMap: waifu" />
+    <xr-asset-material asset-id="mat2" uniforms="u_baseColorMap: deepred" />
+  </xr-assets>
+  <xr-mesh node-id="cube" geometry="cube" material="mat" cast-shadow />
+  <xr-mesh node-id="plane" geometry="plane" material="mat2" position="0 1 0" anim-keyframe="anim" anim-autoplay="clip:logo" states="cullOn: false" />
+  <xr-gltf model="miku" position="-0.15 0.75 1" scale="0.07 0.07 0.07" rotation="0 180 0" anim-autoplay />
+  <xr-camera clear-color="0.4 0.8 0.6 1" position="1 3 4" target="cube" camera-orbit-control />
+  <xr-light type="ambient" color="1 1 1" intensity="1" />
+  <xr-light type="directional" rotation="40 70 0" color="1 1 1" intensity="3" cast-shadow />
+</xr-scene>
