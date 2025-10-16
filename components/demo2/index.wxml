@@ -1,0 +1,12 @@
+<!-- components/demo2/index.wxml -->
+<xr-scene ar-system="modes:Face;camera:Front">
+  <xr-assets>
+    <xr-asset-load type="gltf" asset-id="mask" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/jokers_mask_persona5.glb" />
+  </xr-assets>
+  <xr-ar-tracker mode="Face" auto-sync="43">
+    <xr-gltf model="mask" rotation="0 180 0" scale="0.5 0.5 0.5" />
+  </xr-ar-tracker>
+  <xr-light type="ambient" color="1 1 1" intensity="1" />
+  <xr-light type="directional" rotation="40 70 0" color="1 1 1" intensity="3" />
+  <xr-camera clear-color="0.4 0.8 0.6 1" background="ar" is-ar-camera />
+</xr-scene>

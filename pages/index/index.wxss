@@ -10,4 +10,5 @@
 
 .btn-list .btn {
   margin-bottom: 20rpx;
+  width: 600rpx;
 }

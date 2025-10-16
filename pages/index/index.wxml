@@ -1,6 +1,7 @@
 <!-- index.wxml -->
 <view class="container">
   <view class="btn-list">
-    <button data-type="demo1" bind:tap="handleTap" type="primary" class="btn">基础知识</button>
+    <button data-type="demo1" bind:tap="handleTap" type="primary" class="btn">3D 渲染基础 demo</button>
+    <button data-type="demo2" bind:tap="handleTap" type="primary" class="btn">人脸识别 demo</button>
   </view>
 </view>
