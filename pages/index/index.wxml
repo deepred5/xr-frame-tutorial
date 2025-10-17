@@ -4,5 +4,6 @@
     <button data-type="demo1" bind:tap="handleTap" type="primary" class="btn">3D 渲染基础 demo</button>
     <button data-type="demo2" bind:tap="handleTap" type="primary" class="btn">人脸识别 demo</button>
     <button data-type="demo3" bind:tap="handleTap" type="primary" class="btn">Plane demo</button>
+    <button data-type="demo4" bind:tap="handleTap" type="primary" class="btn">2D Marker demo</button>
   </view>
 </view>

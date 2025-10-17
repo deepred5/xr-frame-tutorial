@@ -1,0 +1,16 @@
+<!-- components/demo4/index.wxml -->
+<xr-scene ar-system="modes:Marker" bind:ready="handleReady">
+  <xr-assets bind:loaded="handleAssetsLoaded">
+    <xr-asset-load type="video-texture" asset-id="hikari" options="loop:true" src="https://assets.papegames.com/resources/cdn/20250925/1c85f5b5ecde29ea.mp4" />
+    <xr-asset-load type="texture" asset-id="deepred2" src="https://assets.papegames.com/resources/cdn/20250925/c737cf37d083d543.png" />
+    <xr-asset-material asset-id="mat" effect="simple" uniforms="u_baseColorMap: video-hikari" />
+    <xr-asset-material asset-id="mat3" effect="simple" uniforms="u_baseColorMap: deepred2" />
+  </xr-assets>
+  <xr-node wx:if="{{loaded}}">
+    <xr-ar-tracker mode="Marker" bind:ar-tracker-switch="handleTrackerSwitch" src="https://assets.papegames.com/resources/cdn/20250925/fe8dad0e9800ef81.jpg">
+      <xr-mesh node-id="mesh-plane" geometry="plane" material="mat" scale="1.7778 1 1" position="0 0.1 0" />
+      <xr-mesh node-id="plane" geometry="plane" material="mat3" position="0.1 0.8 0.1" scale="0.12 0.12 0.12" />
+    </xr-ar-tracker>
+  </xr-node>
+  <xr-camera clear-color="0.4 0.8 0.6 1" background="ar" is-ar-camera />
+</xr-scene>

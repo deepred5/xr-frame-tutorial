@@ -1,0 +1,10 @@
+<!--pages/demo4/index.wxml-->
+<view>
+  <demo4
+    disable-scroll
+    id="main-frame"
+    width="{{renderWidth}}"
+    height="{{renderHeight}}"
+    style="width:{{width}}px;height:{{height}}px;top:{{top}}px;left:{{left}}px;"
+  />
+</view>
