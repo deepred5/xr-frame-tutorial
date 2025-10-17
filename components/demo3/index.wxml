@@ -6,7 +6,6 @@
     <xr-asset-load type="texture" asset-id="deepred" src="https://avatars.githubusercontent.com/u/13102815" />
     <xr-asset-material asset-id="mat" uniforms="u_baseColorMap: deepred" />
   </xr-assets>
-  <xr-env env-data="xr-frame-team-workspace-day" />
   <xr-light type="ambient" color="1 1 1" intensity="1" />
   <xr-light type="directional" rotation="40 70 0" color="1 1 1" intensity="3" cast-shadow />
   <xr-ar-tracker mode="Plane">
