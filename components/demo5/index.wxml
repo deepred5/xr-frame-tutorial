@@ -1,0 +1,16 @@
+<!-- components/demo5/index.wxml -->
+<xr-scene ar-system="modes:OSD" bind:ready="handleReady">
+  <xr-assets bind:loaded="handleAssetsLoaded">
+    <xr-asset-material asset-id="mat" effect="simple" states="alphaMode:BLEND" />
+    <xr-asset-material asset-id="text-simple" effect="simple" />
+  </xr-assets>
+  <xr-node>
+    <xr-ar-tracker mode="OSD" src="https://assets.papegames.com/resources/cdn/20250925/fe8dad0e9800ef81.jpg">
+      <xr-node rotation="0 180 0">
+        <xr-mesh node-id="text-wrap" geometry="plane" material="mat" position="0 1 0" scale="1 1 0.5" rotation="90 0 0" uniforms="u_baseColorFactor:0.875 0.616 0.624 1" />
+        <xr-text node-id="text-name" position="-0.25 1.05 0" scale="0.1 0.1 0.1" material="text-simple" value="美食家蜜蜂" />
+      </xr-node>
+    </xr-ar-tracker>
+  </xr-node>
+  <xr-camera clear-color="0.4 0.8 0.6 1" background="ar" is-ar-camera />
+</xr-scene>
