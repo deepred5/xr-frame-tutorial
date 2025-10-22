@@ -12,7 +12,7 @@ Page({
     renderWidth: 0,
     renderHeight: 0,
     hiddenTip: false,
-    markerImg: 'https://assets.papegames.com/resources/cdn/20251022/fa0b20289040dcd1.jpeg',
+    markerImg: 'https://assets.papegames.com/resources/cdn/20251023/9243cee44d518e77.jpg',
   },
 
   /**
