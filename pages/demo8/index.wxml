@@ -1,0 +1,20 @@
+<!--pages/demo8/index.wxml-->
+<view>
+  <demo8
+    disable-scroll
+    id="main-frame"
+    width="{{renderWidth}}"
+    height="{{renderHeight}}"
+    style="width:{{width}}px;height:{{height}}px;top:{{top}}px;left:{{left}}px;"
+    bind:arTrackerSwitch="handleTrackerSwitch"
+    markerImg="{{markerImg}}"
+  />
+  <view class="marker-tip-container" hidden="{{hiddenTip}}">
+    <view class="marker-img-container">
+      <image mode="aspectFit" class="marker-img" src="{{markerImg}}" />
+    </view>
+    <view class="marker-text-container">
+      <text class="marker-text">请对准识别图</text>
+    </view>
+  </view>
+</view>

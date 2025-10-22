@@ -8,5 +8,6 @@
     <button data-type="demo5" bind:tap="handleTap" type="primary" class="btn">OSD demo (AR)</button>
     <button data-type="demo6" bind:tap="handleTap" type="primary" class="btn">序列帧 SHADER demo</button>
     <button data-type="demo7" bind:tap="handleTap" type="primary" class="btn">透明视频 SHADER demo</button>
+    <button data-type="demo8" bind:tap="handleTap" type="primary" class="btn">产品级案例 (AR)</button>
   </view>
 </view>
