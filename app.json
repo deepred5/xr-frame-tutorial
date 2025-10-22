@@ -5,7 +5,8 @@
     "pages/demo2/index",
     "pages/demo3/index",
     "pages/demo4/index",
-    "pages/demo5/index"
+    "pages/demo5/index",
+    "pages/demo6/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

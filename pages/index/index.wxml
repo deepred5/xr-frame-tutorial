@@ -6,5 +6,6 @@
     <button data-type="demo3" bind:tap="handleTap" type="primary" class="btn">Plane demo</button>
     <button data-type="demo4" bind:tap="handleTap" type="primary" class="btn">2D Marker demo</button>
     <button data-type="demo5" bind:tap="handleTap" type="primary" class="btn">OSD demo</button>
+    <button data-type="demo6" bind:tap="handleTap" type="primary" class="btn">序列帧 SHADER demo</button>
   </view>
 </view>

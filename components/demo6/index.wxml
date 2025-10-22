@@ -1,0 +1,9 @@
+<!-- components/demo6/index.wxml -->
+<xr-scene bind:ready="handleReady">
+  <xr-assets></xr-assets>
+  <xr-node>
+    <xr-node node-id="center" />
+    <xr-mesh visible="{{meshesVisible}}" id="animation-mesh" node-id="animation-mesh" position="0 0 0" scale="1 1 1.3" rotation="90 0 0" geometry="plane" />
+  </xr-node>
+  <xr-camera target="center" clear-color="0.4 0.8 0.6 1" position="0 0 2.5" camera-orbit-control />
+</xr-scene>
