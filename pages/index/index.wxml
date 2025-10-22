@@ -2,10 +2,11 @@
 <view class="container">
   <view class="btn-list">
     <button data-type="demo1" bind:tap="handleTap" type="primary" class="btn">3D 渲染基础 demo</button>
-    <button data-type="demo2" bind:tap="handleTap" type="primary" class="btn">人脸识别 demo</button>
-    <button data-type="demo3" bind:tap="handleTap" type="primary" class="btn">Plane demo</button>
-    <button data-type="demo4" bind:tap="handleTap" type="primary" class="btn">2D Marker demo</button>
-    <button data-type="demo5" bind:tap="handleTap" type="primary" class="btn">OSD demo</button>
+    <button data-type="demo2" bind:tap="handleTap" type="primary" class="btn">人脸识别 demo (AR)</button>
+    <button data-type="demo3" bind:tap="handleTap" type="primary" class="btn">Plane demo (AR)</button>
+    <button data-type="demo4" bind:tap="handleTap" type="primary" class="btn">2D Marker demo (AR)</button>
+    <button data-type="demo5" bind:tap="handleTap" type="primary" class="btn">OSD demo (AR)</button>
     <button data-type="demo6" bind:tap="handleTap" type="primary" class="btn">序列帧 SHADER demo</button>
+    <button data-type="demo7" bind:tap="handleTap" type="primary" class="btn">透明视频 SHADER demo</button>
   </view>
 </view>

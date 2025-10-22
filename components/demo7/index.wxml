@@ -1,0 +1,14 @@
+<!-- components/demo7/index.wxml -->
+<xr-scene bind:ready="handleReady">
+  <xr-assets bind:progress="handleAssetsProgress" bind:loaded="handleAssetsLoaded">
+    <xr-asset-load type="video-texture" asset-id="lzy" src="https://assets.papegames.com/resources/cdn/20251022/bd7cb6ba6546d697.mp4" options="autoPlay:true,loop:true" />
+    <xr-asset-material asset-id="removeBlack-mat" effect="removeBlack" />
+  </xr-assets>
+  <xr-node>
+    <xr-node node-id="center" />
+    <xr-node wx:if="{{loaded}}">
+      <xr-mesh node-id="video-item" position="0 0 0" rotation="90 0 0" scale="1 1 1.3" geometry="plane" material="removeBlack-mat" states="renderQueue:2500" uniforms="u_videoMap: video-lzy" />
+    </xr-node>
+  </xr-node>
+  <xr-camera target="center" clear-color="0.4 0.8 0.6 1" position="0 0 3" camera-orbit-control />
+</xr-scene>

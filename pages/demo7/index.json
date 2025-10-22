@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "demo7": "../../components/demo7"
+  },
+  "disableScroll": true, 
+  "renderer": "webview"
+}
